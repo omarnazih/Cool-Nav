@@ -1,15 +1,52 @@
 /* No CSS *//*# sourceMappingURL=style.css.map */
 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap');
 
 body{
    font-family: 'Poppins', sans-serif;
+   color: #7f5af0;
+   background-color: #010101;
 }
 
 .logo{
   font-family: 'Playfair Display', serif;
+  font-size: 48px;
+}
+
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 5rem;
 }
 
 nav{
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #16161a;
+}
+
+li{
+  list-style: none;
+  font-size: 30px;
+}
+
+li:not(:last-child){
+  margin-right: 5rem;
+}
+a{
+  text-decoration: none;
+}
+
+ul{
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
 }
