@@ -1,4 +1,13 @@
 /* No CSS *//*# sourceMappingURL=style.css.map */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap');
+
+:root{
+  --clr-yellow-main : #f9ed69;
+  --clr-orange-second : #f08a5d;
+  --clr-red-thr : #b83b5e;
+  --clr-purple-frth : #6a2c70;
+  --clr-white: #eeeeee;
+}
 
 *{
   padding: 0;
@@ -6,47 +15,44 @@
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap');
-
-body{
-   font-family: 'Poppins', sans-serif;
-   color: #7f5af0;
-   background-color: #010101;
-}
-
-.logo{
-  font-family: 'Playfair Display', serif;
-  font-size: 48px;
-}
-
-.container{
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 5rem;
-}
-
-nav{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0;
-  background-color: #16161a;
-}
-
-li{
-  list-style: none;
-  font-size: 30px;
-}
-
-li:not(:last-child){
-  margin-right: 5rem;
-}
 a{
   text-decoration: none;
 }
 
-ul{
-  display: flex;
-  flex: 1;
-  justify-content: flex-end;
+li{
+  list-style: none;
 }
+
+body{
+   font-family: 'Poppins', sans-serif;
+   font-size: 18px;
+   color: var(--clr-white);
+   background-color:var( --clr-white);
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.852rem 1.5rem;
+  background-color:var(--clr-red-thr);
+}
+
+nav .logo{
+  font-size: 48px;
+  font-weight: 700;
+  flex: 1;
+}
+
+.nav-items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+/* .nav-items li:not(:last-child){
+  margin-right: 1rem;
+} */
+
+
